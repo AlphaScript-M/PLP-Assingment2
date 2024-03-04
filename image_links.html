@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Links</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+header, nav, section {
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to our Image Gallery</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Home</h2>
+        <p>Welcome to our image gallery! Check out our collection below.</p>
+        <a href="/images/technology.jpeg"><img src="/images/technology.jpeg" alt="Image related to technology"></a>
+    </section>
+
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="image-grid">
+            <a href="/images/nature4.jpeg"><img src="/images/nature4.jpeg" alt="Image related to nature"></a>
+            <a href="/images/nature2.jpeg"><img src="/images/nature2.jpeg" alt="Image related to nature"></a>
+            <a href="/images/nature3.jpeg"><img src="/images/nature3.jpeg" alt="Image related to nature"></a>
+        </div>
+    </section>
+
+    <section id="menu">
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="/images/food1.jpeg">Food Item 1</a></li>
+            <li><a href="/images/food2.jpeg">Food Item 2</a></li>
+            <li><a href="/images/food3.jpeg">Food Item 3</a></li>
+        </ul>
+    </section>
+</body>
+</html>
